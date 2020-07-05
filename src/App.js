@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "./components/Header";
+import React, { Component } from "react";
+import EmpList from "./components/EmpList";
 
 function App() {
-  return <Header />;
+  return <EmpList />;
 }
 
 export default App;

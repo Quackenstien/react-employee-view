@@ -1,4 +1,5 @@
 import React from "react";
+import "./Search.css";
 
 function Header() {
   return (
@@ -13,6 +14,7 @@ function Header() {
             </h6>
           </div>
         </div>
+        <input className="Search" placeholder="Search"></input>
       </header>
     </div>
   );
