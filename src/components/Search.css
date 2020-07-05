@@ -1,4 +1,9 @@
 .Search {
   display: block;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.row {
+  justify-content: center;
 }
