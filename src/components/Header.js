@@ -1,5 +1,6 @@
 import React from "react";
 import "./Search.css";
+import FetchRandomUser from "./FetchRandomUser";
 
 function Header() {
   return (
@@ -25,6 +26,7 @@ function Header() {
             <div className="col-2">D.O.B</div>
           </div>
         </div>
+        <FetchRandomUser />
       </header>
     </div>
   );

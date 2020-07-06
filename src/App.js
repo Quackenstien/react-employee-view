@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import EmpList from "./components/EmpList";
 
 function App() {
