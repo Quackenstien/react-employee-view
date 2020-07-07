@@ -1,38 +1,67 @@
 import React, { Component } from "react";
-import Header from "./Header";
 
 class FetchRandomUser extends Component {
   state = {
     loading: true,
-    people: [],
+    results: [],
   };
   async componentDidMount() {
-    const url = "https://randomuser.me/api/?results=200&nat=us";
+    const url = "https://randomuser.me/api/?results=5&nat=us";
     const response = await fetch(url);
     const data = await response.json();
-    this.setState({ people: data.results, loading: false });
-    console.log(data);
+
+    // const emp = data.results.map((result) => ({
+    //   name: `${result.name.first}, ${result.name.last}`,
+    //   photo: result.picture.thumbnail,
+    //   email: result.email,
+    //   phone: result.phone,
+    //   dob: result.dob.date,
+    // }));
+
+    this.setState({ results: data.results, loading: false });
+    // console.log(emp);
   }
 
   render() {
+    // const { emp } = this.state;
     return (
       <div>
-        {this.state.loading || !this.state.people.length ? (
+        {/* {this.state.loading || !this.state.results.length ? (
           <div>loading...</div>
-        ) : (
-          <div>
-            {this.state.people.map((person) => (
-              <div key={person.login.uuid}>
-                <div>{person.name.first}</div>
-                <div>{person.name.last}</div>
-                <div>{person.email}</div>
-                <div>{person.phone}</div>
-                <div>{person.dob.date}</div>
-                <img src={person.picture.thumbnail} />
-              </div>
-            ))}
-          </div>
-        )}
+        ) : ( */}
+        <div>
+          {/* {this.state.people.map((person) => ( */}
+          {/* <div key={person.login.uuid}> */}
+          <table className="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">D.O.B</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.state.results.map(
+                ({ name, picture, dob, email, phone }) => (
+                  <tr>
+                    <td>
+                      <img alt="userimg" src={picture.thumbnail} />
+                    </td>
+                    <td>{name.first + " " + name.last}</td>
+                    <td>{email}</td>
+                    <td>{phone}</td>
+                    <td>{dob.date}</td>
+                  </tr>
+                )
+              )}
+            </tbody>
+          </table>
+          {/* </div> */}
+          {/* // ))} */}
+        </div>
+        {/* // )} */}
       </div>
     );
   }
