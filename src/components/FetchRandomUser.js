@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Moment from "moment";
 
 class FetchRandomUser extends Component {
   state = {
@@ -52,7 +53,7 @@ class FetchRandomUser extends Component {
                     <td>{name.first + " " + name.last}</td>
                     <td>{email}</td>
                     <td>{phone}</td>
-                    <td>{dob.date}</td>
+                    <td>{Moment(dob.date).format("MM/DD/YYYY")}</td>
                   </tr>
                 )
               )}
