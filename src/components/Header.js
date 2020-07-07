@@ -1,6 +1,7 @@
 import React from "react";
 import "./Search.css";
 import FetchRandomUser from "./FetchRandomUser";
+import { Container } from "./Container";
 
 function Header() {
   return (
@@ -17,15 +18,8 @@ function Header() {
         </div>
         <input className="Search" placeholder="Search"></input>
         <hr />
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-2">Image</div>
-            <div className="col-2">Name</div>
-            <div className="col-2">Phone</div>
-            <div className="col-2">Email</div>
-            <div className="col-2">D.O.B</div>
-          </div>
-        </div>
+        <Container />
+
         <FetchRandomUser />
       </header>
     </div>
