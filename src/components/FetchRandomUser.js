@@ -7,7 +7,7 @@ class FetchRandomUser extends Component {
     results: [],
   };
   async componentDidMount() {
-    const url = "https://randomuser.me/api/?results=5&nat=us";
+    const url = "https://randomuser.me/api/?results=200&nat=us";
     const response = await fetch(url);
     const data = await response.json();
 
