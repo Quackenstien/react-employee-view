@@ -11,28 +11,13 @@ class FetchRandomUser extends Component {
     const response = await fetch(url);
     const data = await response.json();
 
-    // const emp = data.results.map((result) => ({
-    //   name: `${result.name.first}, ${result.name.last}`,
-    //   photo: result.picture.thumbnail,
-    //   email: result.email,
-    //   phone: result.phone,
-    //   dob: result.dob.date,
-    // }));
-
     this.setState({ results: data.results, loading: false });
-    // console.log(emp);
   }
 
   render() {
-    // const { emp } = this.state;
     return (
       <div>
-        {/* {this.state.loading || !this.state.results.length ? (
-          <div>loading...</div>
-        ) : ( */}
         <div>
-          {/* {this.state.people.map((person) => ( */}
-          {/* <div key={person.login.uuid}> */}
           <table className="table table-striped">
             <thead>
               <tr>
@@ -59,10 +44,7 @@ class FetchRandomUser extends Component {
               )}
             </tbody>
           </table>
-          {/* </div> */}
-          {/* // ))} */}
         </div>
-        {/* // )} */}
       </div>
     );
   }
