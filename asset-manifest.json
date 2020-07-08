@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-employee-view/static/css/main.4ec5f4fe.chunk.css",
+    "main.js": "/react-employee-view/static/js/main.45f0bc65.chunk.js",
+    "main.js.map": "/react-employee-view/static/js/main.45f0bc65.chunk.js.map",
+    "runtime-main.js": "/react-employee-view/static/js/runtime-main.eda467fc.js",
+    "runtime-main.js.map": "/react-employee-view/static/js/runtime-main.eda467fc.js.map",
+    "static/js/2.a3c82f3b.chunk.js": "/react-employee-view/static/js/2.a3c82f3b.chunk.js",
+    "static/js/2.a3c82f3b.chunk.js.map": "/react-employee-view/static/js/2.a3c82f3b.chunk.js.map",
+    "index.html": "/react-employee-view/index.html",
+    "precache-manifest.523bbe3598fa75224ccdbca11b2fefc3.js": "/react-employee-view/precache-manifest.523bbe3598fa75224ccdbca11b2fefc3.js",
+    "service-worker.js": "/react-employee-view/service-worker.js",
+    "static/css/main.4ec5f4fe.chunk.css.map": "/react-employee-view/static/css/main.4ec5f4fe.chunk.css.map",
+    "static/js/2.a3c82f3b.chunk.js.LICENSE.txt": "/react-employee-view/static/js/2.a3c82f3b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eda467fc.js",
+    "static/js/2.a3c82f3b.chunk.js",
+    "static/css/main.4ec5f4fe.chunk.css",
+    "static/js/main.45f0bc65.chunk.js"
+  ]
+}
