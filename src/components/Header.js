@@ -1,7 +1,7 @@
 import React from "react";
 import "./Search.css";
+import SearchForm from "./SearchFrom";
 import FetchRandomUser from "./FetchRandomUser";
-import { Container } from "./Container";
 
 function Header() {
   return (
@@ -16,12 +16,10 @@ function Header() {
             </h6>
           </div>
         </div>
-        <input className="Search" placeholder="Search"></input>
+        <SearchForm />
         <hr />
-        <Container />
-
-        <FetchRandomUser />
       </header>
+      <FetchRandomUser />
     </div>
   );
 }
